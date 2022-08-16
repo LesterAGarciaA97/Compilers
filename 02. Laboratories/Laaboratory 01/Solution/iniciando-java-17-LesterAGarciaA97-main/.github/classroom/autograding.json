@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Grading test",
+      "setup": "",
+      "run": "mvn clean verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Ouput",
+      "setup": "mvn clean verify",
+      "run": "java -jar target/quickstart-java-17-1.0-SNAPSHOT.jar",
+      "input": "",
+      "output": "mi version es 17",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
