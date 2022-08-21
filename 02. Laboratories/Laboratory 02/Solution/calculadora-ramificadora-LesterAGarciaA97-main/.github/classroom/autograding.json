@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "Suma",
+      "setup": "",
+      "run": "mvn test -Dtest=com.vorozco.CalculatorTest#add",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Resta",
+      "setup": "",
+      "run": "mvn test -Dtest=com.vorozco.CalculatorTest#subtract",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Multiplicacion",
+      "setup": "",
+      "run": "mvn test -Dtest=com.vorozco.CalculatorTest#multiply",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Division",
+      "setup": "",
+      "run": "mvn test -Dtest=com.vorozco.CalculatorTest#divide",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
