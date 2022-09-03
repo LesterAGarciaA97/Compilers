@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "Frase paco",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FraseTest#paco test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frase reversa",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FraseTest#fraseReversa test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Frase palindromo",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FraseTest#palindromo test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frase mayusculas",
+      "setup": "mvn clean",
+      "run": "mvn compile",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Fibo simpleFibonacci",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FibonacciCreatorTest#simpleFibonacci test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 20
+    },
+    {
+      "name": "Fibo super",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FibonacciCreatorTest#superFibonacci test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 20
+    },
+    {
+      "name": "Fibo thanos",
+      "setup": "mvn clean",
+      "run": "mvn -Dtest=FibonacciCreatorTest#thanosFibonacci test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
