@@ -1,0 +1,96 @@
+{
+  "tests": [
+    {
+      "name": "Identificadores",
+      "run": "mvn -Dtest=IdLexerTest#matchId test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Numeros",
+      "run": "mvn -Dtest=IdLexerTest#matchNum test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Numeros reales",
+      "run": "mvn -Dtest=IdLexerTest#matchReal test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Palabras reservadas",
+      "run": "mvn -Dtest=IdLexerTest#matchKeywords test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Comentarios",
+      "run": "mvn -Dtest=IdLexerTest#matchComment test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Dominio",
+      "run": "mvn -Dtest=IdLexerTest#matchDomain test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Email",
+      "run": "mvn -Dtest=IdLexerTest#matchEmail test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Phone",
+      "run": "mvn -Dtest=IdLexerTest#matchPhone test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "File pacman",
+      "setup": "mvn clean verify",
+      "run": "java -jar target/laboratorio-5-1.0-SNAPSHOT-jar-with-dependencies.jar -f test.txt",
+      "input": "",
+      "output": "pacman no pasara",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "File recovered",
+      "setup": "mvn clean verify",
+      "run": "java -jar target/laboratorio-5-1.0-SNAPSHOT-jar-with-dependencies.jar -f test.txt",
+      "input": "",
+      "output": "Token -tokenType=ID, lexeme='tokenrecuperable'-",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
