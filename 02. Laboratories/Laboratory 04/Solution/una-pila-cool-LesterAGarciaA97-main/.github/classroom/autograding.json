@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Stack test",
+      "setup": "chmod +x setup.sh && ./setup.sh && chmod +x env.sh && . ./env.sh",
+      "run": "cd PILA && make clean && make compile && make test",
+      "input": "",
+      "output": "((.)+(\\n))+(\\b2\\n\\+\\n1\\n)?((.)+(\\n))+(\\>( )*)(\\bCOOL program successfully executed)",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 85
+    }
+  ]
+}
