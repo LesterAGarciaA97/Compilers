@@ -1,0 +1,58 @@
+{
+  "tests": [
+    {
+      "name": "Original",
+      "run": "mvn -Dtest=ParserTest#testOriginal test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Parentesis",
+      "run": "mvn -Dtest=ParserTest#testParentesis test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Division",
+      "run": "mvn -Dtest=ParserTest#testDivision test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Mod",
+      "run": "mvn -Dtest=ParserTest#testMod test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Multiplicacion",
+      "run": "mvn -Dtest=ParserTest#testMultiplicacion test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Acumulacion",
+      "run": "mvn -Dtest=ParserTest#testAcumulacion test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}

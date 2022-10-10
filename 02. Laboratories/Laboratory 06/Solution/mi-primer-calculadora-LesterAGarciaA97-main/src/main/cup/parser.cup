@@ -1,0 +1,29 @@
+package gt.edu.url;
+
+import java_cup.runtime.*;
+
+class MyParser;
+
+/**Simbolos terminales **/
+terminal LPAREN, RPAREN, PLUS, MINUS, TIMES, DIVISION, MOD, ACCUM;
+terminal Double NUMBER;
+
+/**Simbolos no terminales **/
+non terminal Double expr;
+
+/* Precedencia */
+
+precedence left PLUS, MINUS, MOD;
+precedence left TIMES, DIVISION;
+precedence left ACCUM;
+
+start with expr;
+
+expr ::= expr:e1 PLUS expr:e2   {: RESULT = e1 + e2; :}
+       | expr:e1 MINUS expr:e2  {: RESULT = e1 - e2; :}
+       | expr:e1 TIMES expr:e2  {: RESULT = e1 * e2; :}
+       | expr:e1 DIVISION expr:e2  {: RESULT = e1 / e2; :}
+       | expr:e1 MOD expr:e2  {: RESULT = e1 % e2; :}
+       | ACCUM expr:e {: RESULT = e + 1; :}
+       | LPAREN expr:e RPAREN {: RESULT = e; :}
+       | NUMBER:n  {: RESULT = n; :};
