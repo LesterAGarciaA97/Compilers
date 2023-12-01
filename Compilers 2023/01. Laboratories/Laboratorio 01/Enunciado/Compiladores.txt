@@ -1,0 +1,18 @@
+Etapas MVN
+
+clean
+generate resources
+compile
+verify
+package
+
+
+mvn clean verify
+función
+hacer un ejecutable .jar
+mvn package
+
+java -jar target/quickstart-java-17.....
+
+Maven plugin
+
